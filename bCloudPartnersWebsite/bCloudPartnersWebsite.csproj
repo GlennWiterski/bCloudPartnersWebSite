@@ -152,14 +152,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\business-casual.css" />
     <Content Include="Content\img\bg.jpg" />
-    <Content Include="Content\img\blog.png" />
     <Content Include="Content\img\CCAdvantages.png" />
     <Content Include="Content\img\CCTrends.png" />
-    <Content Include="Content\img\CloudPyramid.png" />
     <Content Include="Content\img\CloudTypes.png" />
-    <Content Include="Content\img\CompanyLogoBrownLetters.png" />
-    <Content Include="Content\img\CompanyLogoWhiteLetters.png" />
-    <Content Include="Content\img\DevicesCloud.png" />
+    <Content Include="Content\img\CompanyLogo_1024.png" />
+    <Content Include="Content\img\CompanyLogo_256.png" />
+    <Content Include="Content\img\CompanyLogo_512.png" />
     <Content Include="Content\img\Glenn.JPG" />
     <Content Include="Content\img\Top3Logos.png" />
     <Content Include="favicon.ico" />
