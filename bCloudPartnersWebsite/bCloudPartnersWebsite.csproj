@@ -145,6 +145,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +157,7 @@
     <Content Include="Content\img\CCTrends.png" />
     <Content Include="Content\img\CloudTypes.png" />
     <Content Include="Content\img\CompanyLogo_1024.png" />
+    <Content Include="Content\img\CompanyLogo_256-1.png" />
     <Content Include="Content\img\CompanyLogo_256.png" />
     <Content Include="Content\img\CompanyLogo_512.png" />
     <Content Include="Content\img\Glenn.JPG" />
@@ -181,6 +183,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="robots.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -199,7 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
