@@ -1,2 +1,4 @@
-﻿User-agent: *
-Disallow:
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: http://www.bcloudpartners.com/sitemap.xml

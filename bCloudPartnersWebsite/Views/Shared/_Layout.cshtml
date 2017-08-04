@@ -4,19 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    //gsw
+
     <meta name="description" content="@ViewBag.MetaDescription">
     <meta name="keywords" content="@ViewBag.MetaKeywords">
-    <link rel="canonical" href="@ViewBag.CanonicalURL" />
-    <title>Welcome to bCloudPartners - Your independent and unbiased cloud consulting partner.</title>
-
-   
+    
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/business-casual.css" rel="stylesheet" />
+    <link href="~/Content/business-casual.min.css" rel="stylesheet" />
    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -39,7 +36,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.chtml">Business Casual</a>
+               
+                <a class="navbar-brand">Business Casual</a>
+               
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -47,7 +47,7 @@
 
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Blog", "Blog", "Home")</li>
+                    <li>@Html.ActionLink("Blog/Groups", "Blog", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
              </ul>
             </div>
@@ -66,6 +66,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5982c102e36e38ba"></script> 
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

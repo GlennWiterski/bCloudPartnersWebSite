@@ -152,8 +152,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\business-casual.css" />
+    <Content Include="Content\business-casual.min.css" />
     <Content Include="Content\img\bg.jpg" />
+    <Content Include="Content\img\CCAdvantages-min.png" />
     <Content Include="Content\img\CCAdvantages.png" />
+    <Content Include="Content\img\CCTrends-min.png" />
     <Content Include="Content\img\CCTrends.png" />
     <Content Include="Content\img\CloudTypes.png" />
     <Content Include="Content\img\CompanyLogo_1024.png" />
@@ -161,11 +164,11 @@
     <Content Include="Content\img\CompanyLogo_256.png" />
     <Content Include="Content\img\CompanyLogo_512.png" />
     <Content Include="Content\img\Glenn.JPG" />
+    <Content Include="Content\img\Top3Logos-min.png" />
     <Content Include="Content\img\Top3Logos.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -184,6 +187,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="robots.txt" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
