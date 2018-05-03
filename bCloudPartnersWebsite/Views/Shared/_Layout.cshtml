@@ -2,28 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="yandex-verification" content="0fb778fabaabfed5" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <meta name="language" content="English"> 
     <meta name="description" content="@ViewBag.MetaDescription">
-    <meta name="keywords" content="@ViewBag.MetaKeywords">
-    
+    <title>@ViewBag.Title</title>
+
+      
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/Content/business-casual.min.css" rel="stylesheet" />
-   
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/business-casual.css" rel="stylesheet" />
+
+    <link rel="icon" href="~/Content/img/favicon.ico" type="image/ico" /> 
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/ico" /> 
+  
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 
 <body>
 
-    <img src="~/Content/img/CompanyLogo_256-1.png" alt="Logo for  BCloudPartners" />
-       
-    <div class="brand"> Welcome to bCloudPartners </div>
+    @*<img src="~/Content/img/CompanyLogo_256-1.png" alt="Logo for  BCloudPartners" />*@
+
+    <div class="brand"> Welcome to bCloudPartners  <div id="google_translate_element"></div> </div>
+
+    <div class="l" id="google_translate_element"></div>
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -36,9 +42,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-               
+
                 <a class="navbar-brand">Business Casual</a>
-               
+
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,26 +55,25 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Blog/Groups", "Blog", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-             </ul>
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-  
-        @RenderBody()
-     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; bCloudPartners 2017</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5982c102e36e38ba"></script> 
+    @RenderBody()
+
+     
+    <div>
+        <footer>
+        Copyright &copy; bCloudPartners 2017
+        </footer>
+    </div>
+
+    
+
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -149,23 +150,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BingSiteAuth.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\business-casual.css" />
     <Content Include="Content\business-casual.min.css" />
+    <Content Include="Content\img\AWSMSGoogle.jpg" />
     <Content Include="Content\img\bg.jpg" />
-    <Content Include="Content\img\CCAdvantages-min.png" />
-    <Content Include="Content\img\CCAdvantages.png" />
-    <Content Include="Content\img\CCTrends-min.png" />
-    <Content Include="Content\img\CCTrends.png" />
-    <Content Include="Content\img\CloudTypes.png" />
-    <Content Include="Content\img\CompanyLogo_1024.png" />
-    <Content Include="Content\img\CompanyLogo_256-1.png" />
-    <Content Include="Content\img\CompanyLogo_256.png" />
-    <Content Include="Content\img\CompanyLogo_512.png" />
+    <Content Include="Content\img\Ethereum.jpg" />
+    <Content Include="Content\img\facebook.png" />
+    <Content Include="Content\img\favicon.ico" />
+    <Content Include="Content\img\favicon.png" />
     <Content Include="Content\img\Glenn.JPG" />
-    <Content Include="Content\img\Top3Logos-min.png" />
-    <Content Include="Content\img\Top3Logos.png" />
+    <Content Include="Content\img\Google-plus-icon.png" />
+    <Content Include="Content\img\HyperLedger.jpg" />
+    <Content Include="Content\img\MSBaas.png" />
+    <Content Include="Content\img\VsSolidity.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -188,7 +188,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="robots.txt" />
     <Content Include="sitemap.xml" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -217,7 +219,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
