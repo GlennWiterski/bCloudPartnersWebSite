@@ -29,6 +29,7 @@ hr{
 }
 
   
+
 .brand,
 .address-bar{
     display: none;
@@ -36,7 +37,7 @@ hr{
 
 .navbar-brand {
     /*text-transform: uppercase;*/
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 

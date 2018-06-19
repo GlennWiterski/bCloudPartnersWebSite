@@ -19,8 +19,6 @@ namespace bCloudPartnersWebsite.Controllers
 
         public ActionResult About()
         {
-            
-
             return View();
         }
 
@@ -34,8 +32,54 @@ namespace bCloudPartnersWebsite.Controllers
         {
             return View();
         }
+        
+        public ActionResult Groups()
+        {
+            return View();
+        }
 
-      
+        public ActionResult Blockchain()
+        {
+            return View();
+        }
+        public ActionResult Ethereum()
+        {
+            return View();
+        }
+
+        public ActionResult SmartContracts()
+        {
+            return View();
+        }
+        public ActionResult Hyperledger()
+        {
+            return View();
+        }
+        public ActionResult ChainCode()
+        {
+            return View();
+        }
+        public ActionResult EthereumCloud()
+        {
+            return View();
+        }
+        public ActionResult HyperledgerCloud()
+        {
+            return View();
+        }
+        public ActionResult DeveloperTools()
+        {
+            return View();
+        }
+        public ActionResult Education()
+        {
+            return View();
+        }
+        public ActionResult Forums()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Contact(ContactViewModel vm)
         {
@@ -46,24 +90,23 @@ namespace bCloudPartnersWebsite.Controllers
                 try
                 {
                     MailMessage msz = new MailMessage();
-                    msz.From = new MailAddress("consultants@bcloudpartners.com");
-                    
-                    msz.To.Add("consultants@bcloudpartners.com");  
+                    msz.From = new MailAddress(vm.Email);
+
+                    msz.To.Add("consultants@bcloudpartners.com");
+                    msz.To.Add("glennwiterski@gmail.com");
+
                     msz.Subject = "New bCloudPartners Contact";
 
 
                     msz.Body = vm.Email + " " + vm.Phone + " " + vm.Message;
 
-                   SmtpClient smtp = new SmtpClient();
+                    SmtpClient smtp = new SmtpClient();
 
                     smtp.Host = "relay-hosting.secureserver.net";
 
                     smtp.Port = 25;
-                    //Email address using which mail will send
-                    smtp.Credentials = new System.Net.NetworkCredential("Glenn1958", "!Ktown2017");
-
-                    msz.IsBodyHtml = true;
                     smtp.EnableSsl = false;
+                    
 
                     smtp.Send(msz);
 
@@ -81,12 +124,12 @@ namespace bCloudPartnersWebsite.Controllers
 
             }
 
-        
+
             return View();
         }
 
-         
-             
-        }
+
+
     }
+ }
  
