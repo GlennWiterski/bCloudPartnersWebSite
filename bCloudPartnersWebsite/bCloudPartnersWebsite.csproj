@@ -163,6 +163,8 @@
     <Content Include="Content\business-casual.min.css" />
     <Content Include="Content\img\AWSMSGoogle.jpg" />
     <Content Include="Content\img\bg.jpg" />
+    <Content Include="Content\img\blockchain block diagram.png" />
+    <Content Include="Content\img\blockchain shared diagram.png" />
     <Content Include="Content\img\code.png" />
     <Content Include="Content\img\Ethereum.jpg" />
     <Content Include="Content\img\facebook.png" />
@@ -173,8 +175,11 @@
     <Content Include="Content\img\Google-plus-icon.png" />
     <Content Include="Content\img\HyperLedger.jpg" />
     <Content Include="Content\img\MSBaas.png" />
+    <Content Include="Content\img\public vs private blockchain comparison.png" />
     <Content Include="Content\img\r.jpg" />
+    <Content Include="Content\img\Suiches Decision Model.png" />
     <Content Include="Content\img\VsSolidity.jpg" />
+    <Content Include="Content\img\When Not to Use Blockchain.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -259,6 +264,10 @@
     <Content Include="Views\Home\DeveloperTools.cshtml" />
     <Content Include="Views\Home\Education.cshtml" />
     <Content Include="Views\Home\Forums.cshtml" />
+    <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\Home\BlockchainHistory.cshtml" />
+    <Content Include="Views\Home\BlockchainUseCase.cshtml" />
+    <Content Include="Views\Home\BlockchainIntro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

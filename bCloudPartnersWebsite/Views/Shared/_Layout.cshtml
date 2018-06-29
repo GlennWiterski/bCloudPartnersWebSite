@@ -13,27 +13,27 @@
     <!-- Bootstrap Core CSS -->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/business-casual.css" rel="stylesheet" />
-    <link href="~/Content/Scripts/" rel="stylesheet" />
 
     <link rel="icon" href="~/Content/img/favicon.ico" type="image/ico" />
     <link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/ico" />
 
+    @*<script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>*@
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/umd/popper.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jQuery")
+    @Scripts.Render("~/bundles/popper")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
 
 
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
 </head>
 
 <body>
-
-    
-
     <div class="brand"> Welcome to bCloudPartners  <div id="google_translate_element"></div> </div>
 
-       <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar  nav-fill w:100%" role="navigation">
         <div class="container">
 
@@ -42,13 +42,15 @@
                     <button class="btn-lg btn-secondary dropdown-toggle " type="button" id="dropdownMenuButtonHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Home
                     </button>
-                        <div class="dropdown-menu btn-lg btn-secondary bg-secondary" aria-labelledby="dropdownMenuButton">
-                            @Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-lg btn-secondary" })
-                            <br />
-                            @Html.ActionLink("About", "About", "Home", null, new { @class = "btn btn-lg btn-secondary" })
-                            <br />
-                            @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "btn btn-lg btn-secondary" })
-                        </div>
+                    <div class="dropdown-menu btn-lg btn-secondary bg-secondary" aria-labelledby="dropdownMenuButton">
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                        <br />
+                        @Html.ActionLink("About", "About", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                        <br />
+                        @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                        <br />
+                        @Html.ActionLink("Careers", "Careers", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                    </div>
                 </div>
 
                 <div class="dropdown btn-group  btn-bg-secondary">
@@ -59,6 +61,19 @@
                         @Html.ActionLink("Our Blog", "Blog", "Home", null, new { @class = "btn btn-lg btn-secondary" })
                         <br />
                         @Html.ActionLink("Our Groups", "Groups", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                    </div>
+                </div>
+
+                <div class="dropdown btn-group  bg-secondary">
+                    <button class="btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonEthereum" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blockchain Basics
+                    </button>
+                    <div class="dropdown-menu btn-lg btn-secondary bg-secondary" aria-labelledby="dropdownMenuButton">
+                        @Html.ActionLink("Introduction to Blockchain", "BlockchainIntro", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                        <br />
+                        @Html.ActionLink("Blockchain History", "BlockchainHistory", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                        <br />
+                        @Html.ActionLink("What are some of the use cases for blockchain ?", "BlockchainUseCase", "Home", null, new { @class = "btn btn-lg btn-secondary" })
                     </div>
                 </div>
 
@@ -93,23 +108,23 @@
                         @Html.ActionLink("Hyperledger", "HyperledgerCloud", "Home", null, new { @class = "btn btn-lg btn-secondary" })
                     </div>
                 </div>
-                <div class="dropdown btn-group  btn-bg-secondary">
-                    <button class="btn-group btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonTipsTricks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Useful Links and Tips
-                    </button>
-                    <div class="dropdown-menu btn-lg btn-secondary bg-secondary" aria-labelledby="dropdownMenuButton">
-                        @Html.ActionLink("Developer Tools", "DeveloperTools", "Home", null, new { @class = "btn btn-lg btn-secondary" })
-                        <br />
-                        @Html.ActionLink("Education", "Education", "Home", null, new { @class = "btn btn-lg btn-secondary" })
-                        <br />
-                        @Html.ActionLink("Forums", "Forums", "Home", null, new { @class = "btn btn-lg btn-secondary" })
-                    </div>
-                </div>
+                @*<div class="dropdown btn-group  btn-bg-secondary">
+                        <button class="btn-group btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonTipsTricks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Useful Links and Tips
+                        </button>
+                        <div class="dropdown-menu btn-lg btn-secondary bg-secondary" aria-labelledby="dropdownMenuButton">
+                            @Html.ActionLink("Developer Tools", "DeveloperTools", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                            <br />
+                            @Html.ActionLink("Education", "Education", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                            <br />
+                            @Html.ActionLink("Forums", "Forums", "Home", null, new { @class = "btn btn-lg btn-secondary" })
+                        </div>
+                    </div>*@
 
             </div>
 
         </div>
-       </nav>
+    </nav>
 
     @RenderBody()
 
@@ -120,11 +135,14 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>
+
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+    @*@RenderSection("scripts", required: false)*@
 
 </body>
-
-
 
 </html>

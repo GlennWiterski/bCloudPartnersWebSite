@@ -79,6 +79,26 @@ namespace bCloudPartnersWebsite.Controllers
         {
             return View();
         }
+        public ActionResult Careers()
+        {
+            return View();
+        }
+        public ActionResult BlockchainHistory()
+        {
+            return View();
+        }
+        public ActionResult BlockchainUseCase()
+        {
+            return View();
+        }
+        public ActionResult BlockchainICO()
+        {
+            return View();
+        }
+        public ActionResult BlockchainIntro()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Contact(ContactViewModel vm)
