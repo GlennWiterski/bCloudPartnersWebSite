@@ -59,26 +59,11 @@ namespace bCloudPartnersWebsite.Controllers
         {
             return View();
         }
-        public ActionResult EthereumCloud()
+        public ActionResult Baas()
         {
             return View();
         }
-        public ActionResult HyperledgerCloud()
-        {
-            return View();
-        }
-        public ActionResult DeveloperTools()
-        {
-            return View();
-        }
-        public ActionResult Education()
-        {
-            return View();
-        }
-        public ActionResult Forums()
-        {
-            return View();
-        }
+      
         public ActionResult Careers()
         {
             return View();
@@ -91,11 +76,12 @@ namespace bCloudPartnersWebsite.Controllers
         {
             return View();
         }
-        public ActionResult BlockchainICO()
+     
+        public ActionResult BlockchainIntro()
         {
             return View();
         }
-        public ActionResult BlockchainIntro()
+        public ActionResult BitEthHype()
         {
             return View();
         }

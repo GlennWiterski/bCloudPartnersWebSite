@@ -144,11 +144,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FileProcessorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DownloadFile.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactViewModel.cs" />
+    <Compile Include="Models\DownloadFiles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +168,8 @@
     <Content Include="Content\img\bg.jpg" />
     <Content Include="Content\img\blockchain block diagram.png" />
     <Content Include="Content\img\blockchain shared diagram.png" />
+    <Content Include="Content\img\blog.png" />
+    <Content Include="Content\img\Chaincode.png" />
     <Content Include="Content\img\code.png" />
     <Content Include="Content\img\Ethereum.jpg" />
     <Content Include="Content\img\facebook.png" />
@@ -174,10 +179,14 @@
     <Content Include="Content\img\Glenn.JPG" />
     <Content Include="Content\img\Google-plus-icon.png" />
     <Content Include="Content\img\HyperLedger.jpg" />
+    <Content Include="Content\img\HyperledgerBusinessModel.png" />
     <Content Include="Content\img\MSBaas.png" />
     <Content Include="Content\img\public vs private blockchain comparison.png" />
     <Content Include="Content\img\r.jpg" />
+    <Content Include="Content\img\SmartContract.png" />
+    <Content Include="Content\img\socialIcons.png" />
     <Content Include="Content\img\Suiches Decision Model.png" />
+    <Content Include="Content\img\twitter.png" />
     <Content Include="Content\img\VsSolidity.jpg" />
     <Content Include="Content\img\When Not to Use Blockchain.png" />
     <Content Include="favicon.ico" />
@@ -220,10 +229,13 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="robots.txt" />
+    <Content Include="Scripts\share42.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="share42\icons.png" />
+    <Content Include="share42\share42.js" />
     <Content Include="sitemap.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -242,7 +254,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Home\Blockchain.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -254,20 +265,16 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\Ethereum.cshtml" />
     <Content Include="Views\Home\SmartContracts.cshtml" />
     <Content Include="Views\Home\Groups.cshtml" />
-    <Content Include="Views\Home\Hyperledger.cshtml" />
-    <Content Include="Views\Home\ChainCode.cshtml" />
-    <Content Include="Views\Home\HyperledgerCloud.cshtml" />
-    <Content Include="Views\Home\EthereumCloud.cshtml" />
-    <Content Include="Views\Home\DeveloperTools.cshtml" />
-    <Content Include="Views\Home\Education.cshtml" />
-    <Content Include="Views\Home\Forums.cshtml" />
+    <Content Include="Views\Home\BaaS.cshtml" />
     <Content Include="Views\Home\Careers.cshtml" />
     <Content Include="Views\Home\BlockchainHistory.cshtml" />
     <Content Include="Views\Home\BlockchainUseCase.cshtml" />
     <Content Include="Views\Home\BlockchainIntro.cshtml" />
+    <Content Include="Views\Home\BitEthHype.cshtml" />
+    <Content Include="Views\Home\Chaincode.cshtml" />
+    <Content Include="Views\FileProcessor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,5 +1,6 @@
 ﻿@{
-    ViewBag.MetaDescription = "Helping you better understand what the blockchian is, isn't, and if it even makes sense for your organization.";
+    ViewBag.MetaDescription = "Helping you better understand what the blockchain is, isn't, and if it even makes sense for your " +
+                "organization.";
     ViewBag.Title = "bCloudPartners - A beginners guide to blockchain.";
 }
  
@@ -51,44 +52,57 @@
                     <br />
                     <br />
                     A couple of interesting points:
-                    </h2>
-                    <ul class="list-group">
-                        <li class="list-group-item">The first block in the chain is referred to as the genesis block.</li>
-                        <li class="list-group-item">Each block can contain 1 or more transactions.</li>
-                        <li class="list-group-item">The data contained within a bloc is used to generate a hash value. This hashed value changes as the data is changed, no matter how small the change.</li>
-                        <li class="list-group-item">Each block in the chain has a record of the hash of the previous block. It therefore knows if the previous block has been tampered with.</li>
-                        <li class="list-group-item">Once blocks have been validated and added to the chain, they can not be removed.</li>
-                        <li class="list-group-item">The process of adding new blocks to the chain is referred to as mining.</li>
-                        <li class="list-group-item">
-                            The length of time needed to mine a new block (ie add a new block to the chain) varies by implementation. For example the Bitcoin block chains require 10 minutes under ideal
-                            conditions to add new block, and Ethereum requires 15 seconds under ideal conditions to add a new block.
-                        </li>
-                    </ul>
-                    <h2 class="intro-text text-center">
-                        <br />
-                        The hashing of data within a block, recording the hash value of the previous block and not allowing blocks to be removed insures the integrity of the transactions and chain provenance.
-                        <br />
-                        <br />
-                        <strong>Shared, Trusted  and Public</strong>
-                        <br />
-                        The following diagram shows the architecture of a distributed ledger:
-                        <br />
-                        <img class="img-responsive" src="~/Content/img/blockchain shared diagram.png" alt="Blockchain Shared and Trusted Diagram" />
-                        <br />
-                        <br />
-                        In summary:
-                    </h2>
-                   
-                    <ul class="list-group">
-                        <li class="list-group-item">A decentralized ledger insures that no one single party controls the ledger content or accuracy. There is also no single point of failure</li>
-                        <li class="list-group-item">Since the ledger is publicly visible, increased trust is built even when the participants are not known to each other.</li>
-                        <li class="list-group-item">New block are validated before being added to the chain and each participant receives a copy of these changes.</li>
-                        <li class="list-group-item">The data is hashed so as to insure that the data has not been tampered with.</li>
-                    </ul>
-              
+                </h2>
+                <ul class="list-group">
+                    <li class="list-group-item">The first block in the chain is referred to as the genesis block.</li>
+                    <li class="list-group-item">Each block can contain 1 or more transactions.</li>
+                    <li class="list-group-item">The data contained within a bloc is used to generate a hash value. This hashed value changes as the data is changed, no matter how small the change.</li>
+                    <li class="list-group-item">Each block in the chain has a record of the hash of the previous block. It therefore knows if the previous block has been tampered with.</li>
+                    <li class="list-group-item">Once blocks have been validated and added to the chain, they can not be removed.</li>
+                    <li class="list-group-item">The process of adding new blocks to the chain is referred to as mining.</li>
+                    <li class="list-group-item">
+                        The length of time needed to mine a new block (ie add a new block to the chain) varies by implementation. For example the Bitcoin block chains require 10 minutes under ideal
+                        conditions to add new block, and Ethereum requires 15 seconds under ideal conditions to add a new block.
+                    </li>
+                </ul>
+                <h2 class="intro-text text-center">
+                    <br />
+                    The hashing of data within a block, recording the hash value of the previous block and not allowing blocks to be removed insures the integrity of the transactions and chain provenance.
+                    <br />
+                    <br />
+                    <strong>Shared, Trusted  and Public</strong>
+                    <br />
+                    The following diagram shows the architecture of a distributed ledger:
+                    <br />
+                    <img class="img-responsive" src="~/Content/img/blockchain shared diagram.png" alt="Blockchain Shared and Trusted Diagram" />
+                    <br />
+                    <br />
+                    In summary:
+                </h2>
+
+                <ul class="list-group">
+                    <li class="list-group-item">A decentralized ledger insures that no one single party controls the ledger content or accuracy. There is also no single point of failure</li>
+                    <li class="list-group-item">Since the ledger is publicly visible, increased trust is built even when the participants are not known to each other.</li>
+                    <li class="list-group-item">New block are validated before being added to the chain and each participant receives a copy of these changes.</li>
+                    <li class="list-group-item">The data is hashed so as to insure that the data has not been tampered with.</li>
+                </ul>
+
             </div>
         </div>
     </div>
+
+    <div class="box">
+        <div class="col-lg-12">
+            <h1 class="intro-text text-center">
+                <strong>Want to see a blockchain example ?</strong>
+            </h1>
+            <br />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/WiRFuHXHBhk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
 
     <div class="row">
         <div class="box">
